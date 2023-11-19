@@ -53,13 +53,15 @@ int main()
 		{
 		case 1:
 			std::cout << player.name << " is a Warrior" << std::endl;
-			std::cout << "You are a skilled combatant. Heavily armored with a mighty sword and shield." << std::endl;
-			std::cout << "Health = 25" << std::endl;
-			std::cout << "Sword = 1-8 damage" << std::endl;
-			std::cout << "Shield = block 1-4 damage" << std::endl;
+			// set player health and inventory based on class chosen and display
 			player.health = 25;
 			player.inventory[0] = "Sword";
 			player.inventory[1] = "Shield";
+			std::cout << "You are a skilled combatant. Heavily armored with a mighty sword and shield." << std::endl;
+			std::cout << "Health = "<< player.health << std::endl;
+			std::cout << "Sword = 1-8 damage" << std::endl;
+			std::cout << "Shield = block 1-4 damage" << std::endl;
+			// display what was added to the inventoy slots 
 			player.inventoryCount = 2;
 			for (int i = 0; i < player.inventoryCount; ++i) {
 				std::cout << player.inventory[i] << ", ";
@@ -68,13 +70,15 @@ int main()
 			break;
 		case 2:
 			std::cout << player.name << " is a Rogue" << std::endl;
-			std::cout << "You are agile and stealthy. Mediumly armored, with a dagger and lockpicking tools." << std::endl;
-			std::cout << "Health = 20" << std::endl;
-			std::cout << "Dagger = 1-6 x2 damage" << std::endl;
-			std::cout << "Lockpicking = able to pick locks" << std::endl;
+			// set player health and inventory based on class chosen and display
 			player.health = 20;
 			player.inventory[0] = "Dagger";
 			player.inventory[1] = "Lockpick";
+			std::cout << "You are agile and stealthy. Mediumly armored, with a dagger and lockpicking tools." << std::endl;
+			std::cout << "Health = " << player.health << std::endl;
+			std::cout << "Dagger = 1-6 x2 damage" << std::endl;
+			std::cout << "Lockpicking = able to pick locks" << std::endl;
+			// display what was added to the inventoy slots 
 			player.inventoryCount = 2;
 			for (int i = 0; i < player.inventoryCount; ++i) {
 				std::cout << player.inventory[i] << ", ";
@@ -83,13 +87,15 @@ int main()
 			break;
 		case 3:
 			std::cout << player.name << " is a Magician" << std::endl;
-			std::cout << "You are a practitioner of the arcane. Lightly armored, with a Staff and Spellbook." << std::endl;
-			std::cout << "Health = 15" << std::endl;
-			std::cout << "Spellbook = Contains 4 spells cast at random" << std::endl;
-			std::cout << "Staff = Just there to complete the look" << std::endl;
+			// set player health and inventory based on class chosen and display
 			player.health = 20;
 			player.inventory[0] = "Spellbook";
 			player.inventory[1] = "Staff";
+			std::cout << "You are a practitioner of the arcane. Lightly armored, with a Staff and Spellbook." << std::endl;
+			std::cout << "Health = " << player.health << std::endl;
+			std::cout << "Spellbook = Contains 4 spells cast at random" << std::endl;
+			std::cout << "Staff = Just there to complete the look" << std::endl;
+			// display what was added to the inventoy slots 
 			player.inventoryCount = 2;
 			for (int i = 0; i < player.inventoryCount; ++i) {
 				std::cout << player.inventory[i] << ", ";
