@@ -1,0 +1,3 @@
+﻿  Main.cpp
+C:\Users\Calc\Desktop\School\CSC215\Assignments\Week 5\Project5\Project5\Main.cpp(224,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Project5.vcxproj -> C:\Users\Calc\Desktop\School\CSC215\Assignments\Week 5\Project5\x64\Debug\Project5.exe
